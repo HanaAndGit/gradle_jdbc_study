@@ -1,0 +1,46 @@
+{
+	"folders": {},
+	"connections": {
+		"mysql5-1701962ff6f-7abd6c9ff8dcd921": {
+			"provider": "mysql",
+			"driver": "mysql5",
+			"name": "MySQL - localhost(root)",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"host": "localhost",
+				"port": "3306",
+				"url": "jdbc:mysql://localhost:3306/",
+				"home": "C:\\Program Files\\MySQL\\MySQL Server 5.7",
+				"type": "dev",
+				"handlers": {}
+			}
+		},
+		"mysql5-17019b53a21-3f631b5227dff6ff": {
+			"provider": "mysql",
+			"driver": "mysql5",
+			"name": "MySQL - gradle_jdbc",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"host": "localhost",
+				"port": "3306",
+				"database": "gradle_jdbc",
+				"url": "jdbc:mysql://localhost:3306/gradle_jdbc",
+				"home": "C:\\Program Files\\MySQL\\MySQL Server 5.7",
+				"type": "dev",
+				"handlers": {}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false
+		}
+	}
+}
