@@ -4,9 +4,16 @@ public class Department {
 	private int deptNo;
 	private String deptName;
 	private int floor;
-	
+
+	public Department() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Department(int deptNo) {
+		this.deptNo = deptNo;
+	}
+
 	public Department(int deptNo, String deptName, int floor) {
-		super();
 		this.deptNo = deptNo;
 		this.deptName = deptName;
 		this.floor = floor;
@@ -40,9 +47,7 @@ public class Department {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((deptName == null) ? 0 : deptName.hashCode());
 		result = prime * result + deptNo;
-		result = prime * result + floor;
 		return result;
 	}
 
@@ -55,23 +60,14 @@ public class Department {
 		if (getClass() != obj.getClass())
 			return false;
 		Department other = (Department) obj;
-		if (deptName == null) {
-			if (other.deptName != null)
-				return false;
-		} else if (!deptName.equals(other.deptName))
-			return false;
 		if (deptNo != other.deptNo)
-			return false;
-		if (floor != other.floor)
 			return false;
 		return true;
 	}
 
 	@Override
 	public String toString() {
-		return String.format("Department [deptNo=%s, deptName=%s, floor=%s]", deptNo, deptName, floor);
+		return String.format("%s(%d)", deptName, deptNo);
 	}
-	
-	
-	
+
 }

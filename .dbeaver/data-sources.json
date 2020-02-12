@@ -12,8 +12,7 @@
 				"port": "3306",
 				"url": "jdbc:mysql://localhost:3306/",
 				"home": "C:\\Program Files\\MySQL\\MySQL Server 5.7",
-				"type": "dev",
-				"handlers": {}
+				"type": "dev"
 			}
 		},
 		"mysql5-17019b53a21-3f631b5227dff6ff": {
@@ -27,6 +26,21 @@
 				"port": "3306",
 				"database": "gradle_jdbc",
 				"url": "jdbc:mysql://localhost:3306/gradle_jdbc",
+				"home": "C:\\Program Files\\MySQL\\MySQL Server 5.7",
+				"type": "dev"
+			}
+		},
+		"mysql5-1702e5cf146-27b33335ef54700a": {
+			"provider": "mysql",
+			"driver": "mysql5",
+			"name": "MySQL - bank",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"host": "192.168.10.63",
+				"port": "3306",
+				"database": "bank",
+				"url": "jdbc:mysql://192.168.10.63:3306/bank",
 				"home": "C:\\Program Files\\MySQL\\MySQL Server 5.7",
 				"type": "dev",
 				"handlers": {}
